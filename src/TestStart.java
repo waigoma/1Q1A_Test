@@ -5,7 +5,6 @@ public class TestStart {//単語のテスト最初の起動場所
     /*
     TODO
     入力でテスト内容を保存できるようにする(ファイルパスとキーワード)
-
      */
     //左側にある緑の三角ボタンを押せば開始(IntelliJ IDEAの場合)
     public static void main(String[] args){
