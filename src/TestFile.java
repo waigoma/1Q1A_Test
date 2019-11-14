@@ -21,4 +21,7 @@ public class TestFile {//やりたいテストが格納されている場所の�
 
     public static String yumerisu4_imi = "C:\\Users\\waichi\\Documents\\法政二高\\3-14\\2学期期末\\eigo_yumerisu_imi.txt";
     public static String yumerisu4_spell = "C:\\Users\\waichi\\Documents\\法政二高\\3-14\\2学期期末\\eigo_yumerisu_spell.txt";
+
+    public static String seikei_imi = "C:\\Users\\waichi\\Documents\\法政二高\\3-14\\2学期期末\\政経\\seikei_imi.txt";
+    public static String seikei_spell = "C:\\Users\\waichi\\Documents\\法政二高\\3-14\\2学期期末\\政経\\seikei_spell.txt";
 }

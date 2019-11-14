@@ -2,6 +2,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TestStart {//単語のテスト最初の起動場所
+    /*
+    TODO
+    入力でテスト内容を保存できるようにする(ファイルパスとキーワード)
+
+     */
     //左側にある緑の三角ボタンを押せば開始(IntelliJ IDEAの場合)
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
@@ -41,6 +46,10 @@ public class TestStart {//単語のテスト最初の起動場所
             case "y4":
                 System.out.println("夢リス4が選択されました");
                 new TestLoad(TestFile.yumerisu4_imi, TestFile.yumerisu4_spell, scan);
+                break;
+            case "sk":
+                System.out.println("政経が選択されました");
+                new TestLoad(TestFile.seikei_imi, TestFile.seikei_spell, scan);
                 break;
             default:
                 System.out.println("存在しません");
