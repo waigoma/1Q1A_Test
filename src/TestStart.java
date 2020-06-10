@@ -50,6 +50,18 @@ public class TestStart {//単語のテスト最初の起動場所
                 System.out.println("政経が選択されました");
                 new TestLoad(TestFile.seikei_imi, TestFile.seikei_spell, scan);
                 break;
+            case "sk2":
+                System.out.println("政経2が選択されました");
+                new TestLoad(TestFile.seikei_imi2, TestFile.seikei_spell2, scan);
+                break;
+            case "eall":
+                System.out.println("eng_allが選択されました");
+                new TestLoad(TestFile.lesson_all_imi, TestFile.lesson_all_spell, scan);
+                break;
+            case "rk":
+                System.out.println("rkが選択されました");
+                new TestLoad(TestFile.rekishi_imi, TestFile.rekishi_spell, scan);
+                break;
             default:
                 System.out.println("存在しません");
                 scan.close();
@@ -77,6 +89,10 @@ public class TestStart {//単語のテスト最初の起動場所
                 System.out.println("テストが選択");
                 test(list,list1,scan);
                 break;
+            case "out":
+                System.out.println("テストが選択");
+                out(list,list1,scan);
+                break;
             default:
                 System.out.println("選択範囲外です。システム終了。");
                 scan.close();
@@ -94,5 +110,14 @@ public class TestStart {//単語のテスト最初の起動場所
 
     private static void test(List<String> list, List<String> list1, Scanner scan){//一発勝負のテスト・正答率とかでる
         new Test(list, list1, scan);
+    }
+
+    private static void out(List<String> list, List<String> list1, Scanner scan){//一発勝負のテスト・正答率とかでる
+        for (int i = 0; i < list.size(); i++) {
+            String str = list.get(i);
+            String str1 = list1.get(i);
+
+            System.out.println(str + ":  " + str1);
+        }
     }
 }
